@@ -1,0 +1,32 @@
+RewriteEngine on
+RewriteRule ^dashboard$ index.php
+RewriteRule ^pesan$ index.php?menu=pesan
+RewriteRule ^hapus.pesan.([0-9]+)$ index.php?menu=hapus_pesan&id=$1
+RewriteRule ^calon.siswa$ index.php?menu=calon_siswa
+RewriteRule ^sudah.verifikasi$ index.php?menu=sdh_verifikasi
+RewriteRule ^belum.verifikasi$ index.php?menu=blm_verifikasi
+RewriteRule ^pengumuman$ index.php?menu=pengumuman
+RewriteRule ^hapus_ann.([0-9]+)$ index.php?menu=hapus_ann&id=$1
+RewriteRule ^pengaturan$ index.php?menu=pengaturan
+RewriteRule ^pendaftar$ index.php?menu=pendaftar
+RewriteRule ^detail.([0-9]+) index.php?menu=detail&id_user=$1
+RewriteRule ^verifikasi.([0-9]+) index.php?menu=verifikasi&id_user=$1
+RewriteRule ^cetak.([0-9]+) index.php?menu=cetak&id_user=$1
+RewriteRule ^nilai.test$ index.php?menu=nilai_test
+RewriteRule ^edit.nilai.test.([0-9]+)$ index.php?menu=edit_nilai_test&id_user=$1
+RewriteRule ^hapus.nilai.$ index.php?menu=hapus_nilai&id_user=$1
+
+RewriteRule ^hapus.([0-9]+)$ index.php?menu=hapus_siswa&id_user=$1
+RewriteRule ^edit.bio.siswa.([0-9]+)$ index.php?menu=edit_biodata&id_user=$1
+RewriteRule ^tambah.ortu.siswa.([0-9]+)$ index.php?menu=tambah_ortu_siswa&id_user=$1
+RewriteRule ^tambah.nilai.siswa.([0-9]+)$ index.php?menu=tambah_nilai_siswa&id_user=$1
+
+RewriteRule ^edit.ortu.siswa.([0-9]+) index.php?menu=edit_ortu&id_user=$1
+RewriteRule ^edit.nilai.siswa.([0-9]+) index.php?menu=edit_nilai&id_user=$1
+
+RewriteRule ^edit.ann.([0-9]+)$ index.php?menu=edit_pengumuman&id=$1
+RewriteRule ^login$ login.php
+RewriteRule ^logout$ logout.php
+
+RewriteRule ^ver.detail.([0-9]+)$ index.php?menu=ver_detail&id_user=$1
+RewriteRule ^edit.jalur.([0-9]+)$ index.php?menu=edit_jalur&id_user=$1

@@ -1,0 +1,6 @@
+Options -Indexes
+RewriteEngine on
+RewriteRule ^beranda$ index.php
+RewriteRule ^pengumuman$ index.php?hal=announce
+RewriteRule ^terdaftar$ index.php?hal=registered
+RewriteRule ^s&k$ index.php?hal=snk

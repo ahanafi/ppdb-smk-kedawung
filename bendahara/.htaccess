@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteRule ^dashboard$ index.php
+RewriteRule ^sudah.verifikasi$ index.php?menu=pendaftar
+RewriteRule ^cetak.([0-9]+) index.php?menu=cetak&id_user=$1
+RewriteRule ^logout$ index.php?menu=logout

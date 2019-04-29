@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteRule ^home$ index.php
+RewriteRule ^biodata$ index.php?menu=biodata
+RewriteRule ^data.orang.tua$ index.php?menu=data_orang_tua
+RewriteRule ^nilai$ index.php?menu=nilai
+RewriteRule ^konfirmasi$ index.php?menu=konfirmasi
+RewriteRule ^print$ index.php?menu=print
+RewriteRule ^logout$ index.php?menu=logout
+
+RewriteRule ^edit.bio.([0-9]+)$ index.php?menu=edit_bio&id=$1
+RewriteRule ^edit.ortu.([0-9]+)$ index.php?menu=edit_ortu&id=$1
+RewriteRule ^edit.nilai.([0-9]+)$ index.php?menu=edit_nilai&id=$1
+RewriteRule ^konfirmasi.data.([0-9]+)$ index.php?menu=proses_konf&id_user=$1
